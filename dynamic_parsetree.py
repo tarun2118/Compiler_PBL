@@ -1,6 +1,7 @@
 from graphviz import Digraph
 import re
 
+#this code will generate a parse tree using graphviz library
 class ParseTreeVisualizer:
     def __init__(self):
         self.tree = Digraph("ParseTree")
