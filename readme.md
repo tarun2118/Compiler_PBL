@@ -1,64 +1,27 @@
-# CPU Scheduling Algorithm Comparison
+# Operator Precedence Parser with Syntax Tree Visualizer
 
-This project compares traditional CPU scheduling algorithms with real-time scheduling algorithms using machine learning models. It generates synthetic datasets, trains multiple ML models, and provides a Streamlit interface for visualization and prediction
-## Algorithms Compared
+This project implements an **Operator Precedence Parser Tool** with syntax tree generation and visualization, built for educational and compiler construction purposes. It allows users to input grammar rules and arithmetic expressions, then visualizes the parsing process step-by-step using shift-reduce parsing logic and operator precedence tables.
 
-### Traditional Algorithms
-- First Come First Serve (FCFS)
-- Shortest Job First (SJF)
-- Round Robin (RR)
-- Priority Scheduling
+## 🚀 Features
 
-### Real-time Algorithms
-- Clock-Driven
-- Earliest Deadline First (EDF)
-- Weighted Round Robin
-- Priority-Driven
-- Least Slack Time First (LSTF)
-- Rate Monotonic
+- ✅ Operator Precedence Table Construction (from grammar rules)
+- ✅ Shift-Reduce Parsing using Precedence Comparison
+- ✅ Real-Time Parsing Simulation (stack, input, action updates)
+- ✅ Syntax Tree Generation from Reductions
+- ✅ Syntax Tree Export using Graphviz (PNG format)
+- ✅ Expression input from file (`input.txt`)
+- ✅ Grammar and precedence loading from `output.json`
 
-## Machine Learning Models Used
-- Random Forest
-- Support Vector Machine (SVM)
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
-- Decision Tree
-- Naive Bayes
+## 📁 Project Structure
 
-## Project Structure
-- `data_generator.py`: Generates synthetic datasets for both traditional and real-time algorithms
-- `model_trainer.py`: Trains and evaluates different ML models
-- `train_models.py`: Main script to generate data and train models
-- `app.py`: Streamlit web application for visualization and prediction
-- `models/`: Directory containing saved ML models
-- `*_dataset.csv`: Generated datasets
-
-## Setup and Usage
-
-1. Install the required dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-2. Generate datasets and train models:
-```bash
-python train_models.py
-```
-
-3. Run the Streamlit application:
-```bash
-streamlit run app.py
-```
-
-## Features
-- Generate synthetic datasets for both traditional and real-time algorithms
-- Train and evaluate 6 different ML models
-- Compare model accuracies between traditional and real-time algorithms
-- Interactive web interface for:
-  - Input parameter adjustment
-  - Algorithm prediction
-  - Dataset visualization
-  - Feature correlation analysis
-
-## Note
-The synthetic data generation is designed to slightly favor real-time algorithms to demonstrate their theoretical advantages in certain scenarios. This bias is implemented through controlled randomization in the waiting time calculations. 
+├── main.cpp # Entry point for combined parsing logic
+├── check_grammar.cpp # Grammar validation and processing
+├── buildparsetable.cpp # Builds parse table from grammar
+├── build_precedencetable.cpp # Generates operator precedence matrix
+├── leadlast.cpp # Computes LEADING and TRAILING sets
+├── syntaxtree.py # Builds and visualizes syntax tree
+├── app.py # (Optional) GUI prototype (Tkinter)
+├── input.txt # Expression to be parsed
+├── output.json # Operator precedence table
+├── outputparsing.json # Used during parsing steps
+├── 2.txt # Temporary output or expression steps

@@ -1,0 +1,167 @@
+[
+  {
+    "stack": "(Shift) Stack: $ a",
+    "input": "+*a+a+a+a+a+a+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+*a+a+a+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "*a+a+a+a+a+a+a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + *",
+    "input": "a+a+a+a+a+a+a$",
+    "action": "Shift *"
+  },
+  {
+    "stack": "(Shift) Stack: $ + * a",
+    "input": "+a+a+a+a+a+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ + *",
+    "input": "+a+a+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "+a+a+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+a+a+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "a+a+a+a+a+a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + a",
+    "input": "+a+a+a+a+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "+a+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+a+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "a+a+a+a+a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + a",
+    "input": "+a+a+a+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+a+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "a+a+a+a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + a",
+    "input": "+a+a+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+a+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "a+a+a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + a",
+    "input": "+a+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+a+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "a+a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + a",
+    "input": "+a$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "+a$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Shift) Stack: $ +",
+    "input": "a$",
+    "action": "Shift +"
+  },
+  {
+    "stack": "(Shift) Stack: $ + a",
+    "input": "$",
+    "action": "Shift a"
+  },
+  {
+    "stack": "(Reduce) Stack: $ +",
+    "input": "$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "(Reduce) Stack: $",
+    "input": "$",
+    "action": "Reduce: 1 symbols"
+  },
+  {
+    "stack": "$",
+    "input": "$",
+    "action": "Accept"
+  }
+]
