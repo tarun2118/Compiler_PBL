@@ -1,7 +1,6 @@
 # CPU Scheduling Algorithm Comparison
 
-This project compares traditional CPU scheduling algorithms with real-time scheduling algorithms using machine learning models. It generates synthetic datasets, trains multiple ML models, and provides a Streamlit interface for visualization and prediction.
-
+This project compares traditional CPU scheduling algorithms with real-time scheduling algorithms using machine learning models. It generates synthetic datasets, trains multiple ML models, and provides a Streamlit interface for visualization and prediction
 ## Algorithms Compared
 
 ### Traditional Algorithms
